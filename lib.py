@@ -2,11 +2,8 @@ import pandas as pd
 import os
 
 
-def file_path(filename="train.csv"):
-    file = os.path.join(os.path.dirname(__file__), filename)
-    return file
-
-
-def load_data(file):
-    data = pd.read_csv(file)
+def load_data(filename):
+    directory = os.path.abspath(os.path.dirname(__file__))
+    filepath = os.path.join(directory, 'data', filename)
+    data = pd.read_csv(filepath)
     return data
