@@ -5,10 +5,11 @@ name = "pypi"
 
 [packages]
 jupyter = "*"
-pandas = "*"
 matplotlib = "*"
+numpy = "*"
+pandas = "*"
+scipy = "*"
 sklearn = "*"
-seaborn = "*"
 
 [dev-packages]
 
