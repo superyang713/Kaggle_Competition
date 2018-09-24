@@ -38,3 +38,11 @@ def train_test_split_strat(data, col_name, test_size=0.2):
 
     return train, test
 
+
+def display_scores(scores):
+    """
+    Display the cross validation scores, their average, and standard deviation.
+    """
+    print("Scores:", scores)
+    print("Mean:", scores.mean())
+    print("Standard Deviation:", scores.std())
